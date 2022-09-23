@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(./assets/Poppins/Poppins-Regular.ttf);
+}
+
+main {
+  width: 100%;
+  display: flex;
+}
+
+/* side-section */
+.side {
+  flex: 62%;
+  background-color: rgba(51, 102, 255, 1);
+  height: 1024px;
+}
+
+.side-img {
+  width: 550px;
+  height: 478px;
+}
+
+/* main-section */
+.main-header {
+  flex: 38%;
+}
