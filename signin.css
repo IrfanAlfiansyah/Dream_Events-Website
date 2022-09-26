@@ -48,11 +48,7 @@ main {
   margin-top: 57px;
 }
 
-.has-account {
-  display: flex;
-}
-
-.has-account-text {
+.welcome-text {
   font-family: Poppins;
   font-size: 14px;
   font-weight: 600;
@@ -60,20 +56,6 @@ main {
   margin-left: 100px;
   flex-direction: row;
   margin-top: 15px;
-}
-
-.log-in {
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 600;
-  color: rgba(51, 102, 255, 1);
-  margin-left: 10px;
-  border: 0;
-  background-color: white;
-}
-
-.log-in:hover {
-  color: rgb(7, 65, 241);
 }
 
 .form {
@@ -87,7 +69,8 @@ main {
   font-family: Poppins;
   font-size: 14px;
   font-weight: 500;
-  margin-top: 25px  
+  margin-top: 25px;
+  text-align: right;
 }
 
 input[type="text"],
@@ -113,18 +96,14 @@ input[type="password"] {
   margin-bottom: 20px;
 }
 
-.checkbox {
-  border: 2px solid rgba(51, 102, 255, 1);
-  height: 17px;
-  width: 17px;
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 400;
-  margin-bottom: 20px;
-  margin-right: 20px;
+.forgot-pw {
+  color: rgba(51, 102, 255, 1);
+  background-color: white;
+  border: 0;
+  
 }
 
-.button-signup {
+.button-signin {
   height: 55px;
   width: 100%;
   border-radius: 20px;
@@ -138,8 +117,31 @@ input[type="password"] {
   color: white;
 }
 
-.button-signup:hover {
+.button-signin:hover {
   background: rgb(6, 66, 248);
+}
+
+.alternative-signin {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: rgba(55, 58, 66, 1);
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+
+.alternative-signin-icon {
+  text-align: center;
+}
+
+.alternative-signin-button {  
+  border-radius: 10px;
+  border: 1px solid rgba(51, 102, 255, 1);
+  height: 52px;
+  width: 95px;
+  background-color: white;
 }
 
 .info {
