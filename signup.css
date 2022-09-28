@@ -234,7 +234,9 @@ input[type="password"] {
     padding-right: 50px;
   }
   .info {
-    margin-left: 75px;
+    margin-left: 100px;
+    height: fit-content;
+    margin-bottom: 100px;
   }
   .logo-img2 {
     margin-bottom: 10px;

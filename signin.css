@@ -220,13 +220,11 @@ input[type="password"] {
     margin-left: 50px;
     margin-top: 0;
   }
-  .has-account-text {
+  .welcome-text {
     margin-left: 50px;
     margin-top: 15px;
   }
-  .log-in {
-    margin-left: 10px;
-  }
+
   .form {
     margin-top: 0;
   }
@@ -236,7 +234,13 @@ input[type="password"] {
     padding-right: 50px;
   }
   .info {
-    margin-left: 75px;
+    margin-left: 100px;
+    height: fit-content;
+    margin-bottom: 100px
+  }
+  .alternative-signin-button {  
+    height: 40px;
+    width: 60px;
   }
   .logo-img2 {
     margin-bottom: 10px;
@@ -268,8 +272,8 @@ input[type="password"] {
     margin-top: 0;
     margin-bottom: 0;
   }
-  .log-in {
-    margin-left: 5px;
+  .welcome-text {
+    margin-left: 25px;
   }
   .form-container {
     margin-top: 20px;
@@ -280,10 +284,13 @@ input[type="password"] {
     height: 45px;
     border-radius: 15px;
   }
-  .button-signup {
+  .button-signin {
     margin-top: 5px;
     height: 45px;
     border-radius: 15px;
+  }
+  .alternative-signin {
+    margin-top: 25px;
   }
   .logo-img2 {
     height: 50px;
