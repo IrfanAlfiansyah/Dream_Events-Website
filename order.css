@@ -1,24 +1,25 @@
-*,
-*::before,
-*::after {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-@font-face {  
+@font-face {
   font-family: "Poppins";
   src: url(./assets/Poppins/Poppins-Regular.ttf);
 }
 
-
 .header {
   height: 100px;
-  background-color: #ffffff;
+  background-color:white;
 }
 
-.container-fluid {
-  padding: 0%;
+.navbar-collapse {
+  justify-content: center;
+  text-align: center;
+}
+.nav-link {
+  justify-content: center;
 }
 
 .logo {
@@ -73,11 +74,13 @@
   font-family: Poppins;
   font-size: 16px;
   font-weight: 600;
-  padding-left: 30px;
+  padding-left: 10px;
   margin: 0;
+  border: none;
+  background-color: white;
 }
 
-.body {
+.primary {
   background: rgba(244, 247, 255, 1);
   padding-top: 5%;
 }
@@ -90,7 +93,6 @@
   margin-right: 10%;
   display: flex;
   flex-direction: row;
-  padding: 0;
 }
 .side-order {
   width: 60%;
@@ -129,6 +131,7 @@
   display: flex;
   flex-direction: row;
   margin-top: 20px;
+  margin-right: 5%;
 }
 .sort-img {
   height: 65px;
@@ -275,7 +278,7 @@
   font-family: Poppins;
 }
 
-.body {
+.footer-body {
   padding: 0;
 }
 .logo-img2 {
@@ -327,6 +330,12 @@
   color: rgba(193, 197, 208, 1);
   margin-bottom: 15px;
 }
+.bottom-footer-text {
+  display: none;
+}
+.top {
+  margin-right: 150px;
+}
 
 @media (max-width: 1440px) {
   .ticket {
@@ -338,11 +347,18 @@
   .detail-order {
     padding-right: 10%;
   }
+  .bottom-footer-text {
+    display: none;
+  }
+  .top {
+    margin-right: 50px;
+  }
 }
 
 @media (max-width:1024px) {
   .img-order {
-    height: 80%;
+    height: 70%;
+    width: 100%;
     margin-top: 10%;
   }
   .ticket {
@@ -353,7 +369,7 @@
   }
   .quantity-tag {
     margin-left: 25%;
-    margin-right: 20%
+    margin-right: 17%
   }
   .detail-order {
     padding-right: 0%;
@@ -361,9 +377,12 @@
   .detail-order-info-text {
     margin-bottom: 5px;
   }
+  .detail-order-value-text {
+    margin: 0;
+  }
   .button-checkout {
-    margin-top: 0;
-    margin-bottom: 50px;
+    margin-top: 30;
+    margin-bottom: 30px;
   }
   .info {
     margin-left: 100px;
@@ -378,14 +397,28 @@
     margin-bottom: 65px;
     margin-right: 10px;
   }
+  .bottom-footer-text {
+    display: none;
+  }
+  .info {
+    margin-bottom: 0;
+    padding-bottom: 50px;
+  }
+  .col {
+    margin-right: 30px;
+  }
+  .top {
+    margin-right: 30px;
+  }
 }
 
 @media (max-width: 768px) {
   .header {
     height: 70px;
   }
-  .body {
+  .primary {
     margin: 0%;
+    padding-top: 10%;
   }
   .logo {
     padding: 0;
@@ -486,13 +519,12 @@
   }
   .sosmed-icon {
     margin-top: 10px;
-    margin-bottom: 65px;
     margin-right: 10px;
   }
   .info {
     height: max-content;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 0;
     font-size: 12px;
   }
   .sosmed-icon {
@@ -509,8 +541,11 @@
   .right-text {
     font-size: 11px;
   }
-  .body {
-    margin: 20px;
+  .footer-body {
+    margin: 30px;
+  }
+  .bottom-footer-text {
+    display: none;
   }
 }
 
@@ -603,10 +638,7 @@
     flex-direction: column;
     margin-left: 20px;
     margin-bottom: 0;
-    margin-top: 0;
-  }
-  .col-2 {
-    width: 100%;
+    margin-top: 20px;
   }
   .logo-img2 {
     height: 40px;
@@ -617,8 +649,14 @@
   .footer-text {
     display: none;
   }
+  .bottom-footer-text {
+    display: flex;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: left;
+    color: rgba(90, 113, 132, 1);
+    margin-left: 20px;
+    margin-bottom: 30px;
+  }
 }
-
-
-
-
