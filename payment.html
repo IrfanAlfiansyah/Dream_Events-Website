@@ -5,10 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./order.css">
+  <link rel="stylesheet" href="./payment.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
-  <title>Order</title>
+  <title>Payment</title>
 </head>
 
 <body>
@@ -44,85 +44,52 @@
   </div>
   <main class="primary">
     <div class="main-content">
-      <div class="side-order">
-        <img class="img-order" src="./assets/img/seat.png" alt="seat">
+      <div class="side-payment">
+        <p class="payment-method">Payment Method</p>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" id="radio" name="optradio" value="option1" checked>
+          <img class="form-check-img" src="./assets/img/card.png" alt="">Card
+          <label class="form-check-label" for="radio1"></label>
+        </div>
+        <div class="bank-card">
+          <img class="img-payment" src="./assets/img/atm-card.png" alt="atm-card">
+          <button class="plus-button">+</button>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" id="radio" name="optradio" value="option2">
+          <img class="form-check-img" src="./assets/img/bank.png" alt="">Bank Trasnfer
+          <label class="form-check-label" for="radio2"></label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" id="radio" name="optradio" value="option3">
+          <img class="form-check-img" src="./assets/img/retail.png" alt="">Retail
+          <label class="form-check-label" for="radio2"></label>
+        </div>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" id="radio" name="optradio" value="option4">
+          <img class="form-check-img" src="./assets/img/e-money.png" alt="">E-Money
+          <label class="form-check-label" for="radio2"></label>
+        </div>
       </div>
-      <div class="order-class">
-        <div class="head-order-class">
-          <p class="ticket">Tickets</p>
-          <p class="byprice">By Price</p>
-          <img class="sort-img" src="./assets/img/sort.png" alt="sort">
+      <div class="payment-class">
+        <div class="head-payment-class">
+          <p class="ticket-detail">Ticket Detail</p>
         </div>
-        <div class="order-card">
-          <div class="section-img">
-            <img class="regular" src="./assets/img/reg.png" alt="regular">
+        <div class="detail-payment">
+          <div class="detail-payment-info">
+            <p class="detail-payment-info-text">Event</p>
+            <p class="detail-payment-info-text">Ticket Section</p>
+            <p class="detail-payment-info-text">Quantity</p>
+            <p class="detail-payment-info-text">Total Payment</p>
           </div>
-          <div class="order-description">
-            <p class="section">SECTION REG, ROW 1</p>
-            <p class="section-left">12 seat available</p>
-          </div>
-          <div class="price">
-            <p class="price-tag">Rp50.000</p>
-            <p class="per-person">Per person</p>
-          </div>
-        </div>
-        <div class="quantity">
-          <div class="quantity-tag">Quantity</div>
-          <button class="quantity-tag-min">-</button>
-          <p class="count">0</p>
-          <button class="quantity-tag-plus">+</button>
-        </div>
-        <div class="order-card">
-          <div class="section-img">
-            <img class="regular" src="./assets/img/vip.png" alt="vip">
-          </div>
-          <div class="order-description">
-            <p class="section">SECTION VIP, ROW 2</p>
-            <p class="section-left">12 seat available</p>
-          </div>
-          <div class="price">
-            <p class="price-tag">Rp75.000</p>
-            <p class="per-person">Per person</p>
+          <div class="detail-payment-value">
+            <p class="detail-payment-value-text">Sights & Sounds Exhibition</p>
+            <p class="detail-payment-value-text">VIP</p>
+            <p class="detail-payment-value-text">2</p>
+            <p class="detail-payment-value-text">Rp100.000</p>
           </div>
         </div>
-        <div class="quantity">
-          <div class="quantity-tag">Quantity</div>
-          <button class="quantity-tag-min">-</button>
-          <p class="count">0</p>
-          <button class="quantity-tag-plus">+</button>
-        </div>
-        <div class="order-card">
-          <div class="section-img">
-            <img class="regular" src="./assets/img/vvip.png" alt="vvip">
-          </div>
-          <div class="order-description">
-            <p class="section">SECTION REG, ROW 1</p>
-            <p class="section-left">12 seat available</p>
-          </div>
-          <div class="price">
-            <p class="price-tag">Rp100.000</p>
-            <p class="per-person">Per person</p>
-          </div>
-        </div>
-        <div class="quantity">
-          <div class="quantity-tag">Quantity</div>
-          <button class="quantity-tag-min">-</button>
-          <p class="count">0</p>
-          <button class="quantity-tag-plus">+</button>
-        </div>
-        <div class="detail-order">
-          <div class="detail-order-info">
-            <p class="detail-order-info-text">Ticket Section</p>
-            <p class="detail-order-info-text">Quantity</p>
-            <p class="detail-order-info-text">Total Payment</p>
-          </div>
-          <div class="detail-order-value">
-            <p class="detail-order-value-text">VIP</p>
-            <p class="detail-order-value-text">2</p>
-            <p class="detail-order-value-text">Rp100.000</p>
-          </div>
-        </div>
-        <button class="button-checkout">Checkout</button>
+        <button class="button-payment">Payment</button>
       </div>
     </div>
     <footer class="info">

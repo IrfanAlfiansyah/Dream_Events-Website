@@ -69,137 +69,71 @@
   display: flex;
   flex-direction: row;
 }
-.side-order {
+
+.side-payment {
   width: 60%;
-}
-.img-order {
-  height: 100%;
-  width: 100%;
+  margin-left: 10%;
+  margin-top: 5%;
 }
 
-.order-class {
-  display: flex;
-  flex-direction: column;
-  width: 40%;
+.payment-method {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: left;
 }
 
-.head-order-class {
-  display: flex;
-  flex-direction: row;
+.form-check {
   font-family: Poppins;
   font-size: 16px;
   font-weight: 600;
+  text-align: left;
+  padding-bottom: 50px;
 }
-
-.ticket {
-  margin-bottom: 0;
-  margin-top: 4%;
-  margin-right: 60%;
-}
-
-.byprice {
-  margin-bottom: 0;
-  margin-top: 4%;
-}
-
-.order-card {
-  display: flex;
-  flex-direction: row;
-  margin-top: 20px;
+.form-check-img {
   margin-right: 5%;
 }
-.sort-img {
-  height: 65px;
-  width: 65px;  
-}
 
-.regular {
-  height: 45px;
-  width: 45px;
-}
-
-.order-description {
-  margin-right: 30%;
-  margin-left: 10%;
-}
-
-.section {
-  margin: 0;
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 600;
-}
-
-.section-left {
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 600;
-  color: rgba(189, 192, 196, 1);
-}
-
-.price-tag {
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 600;
-}
-
-.per-person {
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 600;
-  color: rgba(189, 192, 196, 1);
-}
-
-.price-tag {
-  margin: 0;
-}
-
-.quantity {
+.bank-card {
   display: flex;
   flex-direction: row;
 }
 
-.quantity-tag {
-  margin: 0;
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 600;
-  margin-left: 18%;
-  margin-right: 40%;
-}
-
-.quantity-tag-min {
-  width: 33px;
-  height: 33px;
-  background-color: white;
-  border: 1px solid rgba(193, 197, 208, 1);
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 600;
+.plus-button {
+  height: 40px;
+  width: 40px;
   border-radius: 10px;
-  margin-right: 20px;
+  background-color:white;
+  border-style: dashed;
+  border-color: blue;
+  font-size: 20px;
+  margin-left: 5%;
+  margin-top: 24%;
 }
 
-.quantity-tag-plus {
-  width: 33px;
-  height: 33px;
-  background-color: white;
-  border: 1px solid rgba(193, 197, 208, 1);
+.img-payment {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 10%;
+}
+
+.payment-class {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+
+.head-payment-class {
+  display: flex;
+  flex-direction: row;
   font-family: Poppins;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 600;
-  border-radius: 10px;
-  margin-left: 20px;
 }
 
-.count {
-  font-family: Poppins;
-  font-size: 14px;
-  font-weight: 600;
-  margin: 0;
-}
-
-.detail-order {
+.detail-payment {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -207,26 +141,26 @@
   margin-top: 10%;
 }
 
-.detail-order-info {
+.detail-payment-info {
   display: flex;
   flex-direction: column;
 }
 
-.detail-order-info-text {
+.detail-payment-info-text {
   font-family: Poppins;
   font-size: 16px;
   font-weight: 600;
 }
 
-.detail-order-value-text {
+.detail-payment-value-text {
   font-family: Poppins;
   font-size: 16px;
   font-weight: 600;
-  text-align: center;
+  text-align: right;
   color: blue;
 }
 
-.button-checkout {
+.button-payment {
   font-family: Poppins;
   font-size: 16px;
   font-weight: 600;
@@ -236,12 +170,12 @@
   box-shadow: 0px 8px 10px 0px rgba(35, 149, 255, 0.3);
   border: none;
   height: 60px;
-  width: 80%;
+  width: 85%;
   border-radius: 20px;
   margin-top: 20px;
 }
 
-.button-checkout:hover {
+.button-payment:hover {
     background: rgb(11, 70, 248);
 }
 
@@ -313,15 +247,6 @@
 }
 
 @media (max-width: 1440px) {
-  .ticket {
-    margin-right: 55%;
-  }
-  .order-description {
-    margin-right: 25%;
-  }
-  .detail-order {
-    padding-right: 10%;
-  }
   .bottom-footer-text {
     display: none;
   }
@@ -331,33 +256,43 @@
 }
 
 @media (max-width:1024px) {
-  .img-order {
+  .payment-method {
+    font-size: 16px;
+  }
+  .img-payment {
     height: 70%;
     width: 100%;
-    margin-top: 10%;
   }
-  .ticket {
-    margin-right: 40%;
+  .plus-button {
+    height: 30px;
+    width: 50px;
+    border-radius: 10px;
   }
-  .order-description {
-    margin-right: 10%;
+  .ticket-detail {
+    font-size: 16px;
   }
-  .quantity-tag {
-    margin-left: 25%;
-    margin-right: 17%
+  .form-check {
+    font-size: 14px;
   }
-  .detail-order {
+  .payment-class {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .detail-payment {
     padding-right: 0%;
   }
-  .detail-order-info-text {
-    margin-bottom: 5px;
+  .detail-payment-info-text {
+    margin-bottom: 15px;
+    font-size: 14px;
   }
-  .detail-order-value-text {
+  .detail-payment-value-text {
     margin: 0;
+    font-size: 14px;
   }
-  .button-checkout {
+  .button-payment {
     margin-top: 30;
     margin-bottom: 30px;
+    width: 100%;
   }
   .info {
     margin-left: 100px;
@@ -388,94 +323,50 @@
 }
 
 @media (max-width: 768px) {
-  .primary {
-    margin: 0%;
-    padding-top: 10%;
-  }
-  .logo {
-    padding: 0;
-  }
- 
-  .profile {
-    height: 40px;
-    width: 40px;
-  }
-  .profile-name-tag {
+  .payment-method {
     font-size: 14px;
-    padding-left: 10px;
   }
-  .col-sm-3.profile {
-    margin-top: 15px;
-    justify-content: left;
-    padding-right: 10px;
+  .form-check-img {
+    height: 30px;
   }
-  .ticket {
-    font-size: 12px;
-    margin-right: 40%;
+  .img-payment {
+    width: 80%;
   }
-  .byprice {
-    font-size: 12px;
+  .plus-button {
+    height: 30px;
+    width: 30px;
+    border-radius: 10px;
+    margin-top: 20%;
   }
-  .sort-img {
-    height: 35px;
-    width: 35px;
+  .ticket-detail {
+    font-size: 14px;
   }
-  .regular {
-    height: 25px;
-    width: 25px;
+  .form-check {
+    font-size: 14px;
+    padding-bottom: 20px;
   }
-  .section {    
-    font-size: 10px;
+  .payment-class {
+    margin-left: 5%;
+    margin-right: 5%;
   }
-  .section-left {
-    font-size: 10px;
-  }
-  .price-tag {
-    font-size: 10px;
-  }
-  .per-person {
-    font-size: 10px;
-  }
-  .quantity-tag {
-    margin-left: 20%;
-    margin-right: 30%;    
-    font-size: 10px;
-  }
-  .quantity-tag-min {
-    font-size: 10px;
-    margin-right: 10px;
-    height: 20px;
-    width: 20px;
-    border-radius: 5px;
-  }
-  .quantity-tag-plus {
-    font-size: 10px;
-    height: 20px;
-    width: 20px;
-    border-radius: 5px;
-    margin-left: 10px;
-  }
-  .count {
-    font-size: 12px
-  }
-  .detail-order {
+  .detail-payment {
     padding-right: 0%;
   }
-  .detail-order-info-text {
-    margin-bottom: 2px;
-    font-size: 12px;
+  .detail-payment-info-text {
+    margin-bottom: 15px;
+    font-size: 10px;
   }
-  .detail-order-value-text {
-    font-size: 12px;
-    padding-right: 10px;
-    margin-bottom: 2px;
+  .detail-payment-value-text {
+    margin-bottom: 15px;
+    font-size: 10px;
   }
-  .button-checkout {
-    margin-top: 0;
+  .button-payment {
+    margin-top: 30;
     margin-bottom: 30px;
-    margin-top: 20px;
+    width: 100%;
     height: 40px;
     border-radius: 10px;
+    font-size: 12px;
   }
   .info {
     margin-left: 100px;
@@ -544,63 +435,54 @@
     margin-left: 20px;
     margin-right: 20px;
   }
-  .img-order {
-    margin-left: 25px;
-    height: 350px;
-    width: 350px;
-    transform:rotate(45deg);
-    -ms-transform:rotate(45deg); 
-    -moz-transform:rotate(45deg); 
-    -webkit-transform:rotate(45deg); 
-    -o-transform:rotate(45deg);
-    justify-content: center;
-    align-items: center;
+  .payment-method {
+    font-size: 14px;
   }
-  .order-class {
+  .form-check-img {
+    height: 30px;
+  }
+  .img-payment {
+    width: 120%;
+  }
+  .bank-card {
+    flex-direction: column;
+  }
+  .plus-button {
+    width: 30px;
+    border-radius: 10px;
+    margin-top: 3%;
+    margin-left: 5px;
+    margin-bottom: 10%;
+  }
+  .ticket-detail {
+    font-size: 14px;
+  }
+  .form-check {
+    font-size: 14px;
+    padding-bottom: 20px;
+  }
+  .payment-class {
+    margin-left: 5%;
+    margin-right: 0;
+    width: 85%;
+  }
+  .detail-payment {
+    padding-right: 0%;
+  }
+  .detail-payment-info-text {
+    margin-bottom: 15px;
+    font-size: 10px;
+  }
+  .detail-payment-value-text {
+    margin-bottom: 15px;
+    font-size: 10px;
+  }
+  .button-payment {
+    margin-top: 30;
+    margin-bottom: 30px;
     width: 100%;
-  }
-  .head-order-class {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .ticket {
-    margin-right: 60%;
-    margin-top: 8px;
-  }
-  .byprice {
-    margin-top: 8px;
-  }
-  .regular {
-    margin-left: 20px;
-  }
-  .order-description {
-    margin-right: 25%;
-  }
-  .quantity {
-    margin-top: 10px;
-  }
-  .quantity-tag {
-    margin-left: 21%;
-    margin-right: 40%;
-  }
-  .count {
-    font-size: 10px;
-  }
-  .detail-order {
-    margin-top: 15px;
-    margin-left: 20px;
-    margin-right: 30px;
-  }
-  .detail-order-info-text {
-    font-size: 10px;
-    margin: 0;
-  }
-  .detail-order-value-text {
-    font-size: 10px;
-    margin: 0;
-  }
-  .button-checkout {
-    width: 100%;
+    height: 40px;
+    border-radius: 10px;
     font-size: 12px;
   }
   .info {
