@@ -1,6 +1,6 @@
 <h1 align='center'>Dream_Events Website </h1>
   <p align="center">
-    <a href="link_deploy">View Demo</a>
+    <a href="link_deploy">https://dream-events-apps.netlify.app/</a>
     ·
     <a href="https://github.com/FazzWeb10/Responsive-Website/issues">Report Bug</a>
     ·
@@ -28,10 +28,6 @@
 ## Acknowledgements
 
 - [Bootstrap](https://getbootstrap.com/)
-
-## Related Project
-
-[Link Frontend](https://dream-events-apps.netlify.app/)
 
 ## License
 
