@@ -8,9 +8,9 @@
   </p>
 
 <div style="display: grid; grid-template-areas: 'a b'; row-gap: 10px; column-gap: 10px">
-<img src="./assets/img/order.png" style="width: 100%; height: auto;"></img>
-<img src="./assets/img/signin.png" style="width: 100%; height: auto;"></img>
 <img src="./assets/img/register.png" style="width: 100%; height: auto;"></img>
+<img src="./assets/img/signin.png" style="width: 100%; height: auto;"></img>
+<img src="./assets/img/order.png" style="width: 100%; height: auto;"></img>
 <img src="./assets/img/detail.png" style="width: 100%; height: auto;"></img>
 <img src="./assets/img/payment.png" style="width: 100%; height: auto;"></img>
 </div>
