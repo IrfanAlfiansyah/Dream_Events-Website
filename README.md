@@ -29,6 +29,10 @@
 
 - [Bootstrap](https://getbootstrap.com/)
 
+## Related Project
+
+[Link Frontend](https://dream-events-apps.netlify.app/)
+
 ## License
 
 © [Irfan Alfiansyah](https://github.com/IrfanAlfiansyah/)
